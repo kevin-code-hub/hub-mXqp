@@ -12,9 +12,6 @@ labels = dataset[1].unique()
 # print(labels)
 
 def text_calssify_using_ml(text: str) -> str:
-    """
-    文本分类（机器学习），输入文本完成类别划分
-    """
     input_sententce = dataset[0].apply(lambda x: " ".join(jieba.lcut(x)))  # sklearn对中文处理
 
     vector = CountVectorizer()  # 对文本进行提取特征 默认是使用标点符号分词
@@ -30,9 +27,6 @@ def text_calssify_using_ml(text: str) -> str:
     return model.predict(test_feature)[0]
 
 def text_calssify_using_llm(text: str) -> str:
-    """
-    文本分类（大语言模型），输入文本完成类别划分
-    """
     client = OpenAI(
         api_key=os.getenv("DASHSCOPE_API_KEY"),
         base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
