@@ -18,7 +18,7 @@ model.fit(input_feature, dataset[1].values)
 
 
 client = OpenAI(
-    api_key="sk-b8d6efe8169b4351a91a13b8fe8fd99a", # 账号绑定，用来计费的
+    api_key="sk-b8d6efe8169xxxxxx13b8fe8fd99a", # 账号绑定，用来计费的
     # 大模型阿里云
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
 )
