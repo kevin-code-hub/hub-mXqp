@@ -17,7 +17,7 @@ knn.fit(transform, data[1].values)
 
 client = OpenAI(
     # https://bailian.console.aliyun.com/?tab=model#/api-key
-    api_key="sk-4662043feab8475b879290804bcfecaa",
+    api_key="sk-46620xxxxx90804bcfecaa",
 
     # 大模型厂商的地址，阿里云
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
