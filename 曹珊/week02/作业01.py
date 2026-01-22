@@ -139,7 +139,7 @@ char_dataset = CharBoWDataset(texts, numerical_labels, char_to_index, max_len, v
 dataloader = DataLoader(char_dataset, batch_size=32, shuffle=True)  # 读取批量数据集 -》 batch数据
 
 hidden_dim = 128
-hidden_dim_1 = 128
+hidden_dim_1 = 256
 hidden_dim_2 = 128
 output_dim = len(label_to_index)
 model = SimpleClassifier(vocab_size, hidden_dim, output_dim)  # 维度和精度有什么关系？
