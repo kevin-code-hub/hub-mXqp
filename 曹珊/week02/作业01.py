@@ -227,7 +227,7 @@ print(f"输入 '{new_text_2}' 预测为: '{predicted_class_2}'")
 
 # 画图对比
 plt.rcParams['font.sans-serif'] = ['SimHei']  # 设置黑体
-plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示问题
+plt.rcParams['axes.unicode_minus'] = False  # 解决符号显示问题
 categories = [0]
 for _ in range(len(loss_nums) - 1):
     categories.append(len(categories))
