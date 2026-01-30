@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 # 生成sin函数数据
 X_numpy = np.linspace(0, 4 * np.pi, 100).reshape(-1, 1)
-y_numpy= 2 * np.sin(X_numpy) + 1 + np.random.randn(100, 1)
+y_numpy = np.sin(X_numpy) + np.random.randn(100, 1) / 20
 #2 * X_numpy + 1 + np.random.randn(100, 1)
 
 # 将numpy数组转换为torch张量并设置为浮点类型
