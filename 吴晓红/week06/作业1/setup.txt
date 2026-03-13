@@ -1,0 +1,18 @@
+1: 安装包下载地址：https://www.elastic.co/cn/downloads/elasticsearch
+elasticsearch-9.3.0-windows-x86_64.zip
+解压后需要修改es的配置文件elasticsearch.yml
+# 添加或修改为以下配置
+xpack.security.enabled: false
+network.host: 0.0.0.0
+discovery.seed_hosts: ["host1"]
+
+
+2: 中文分词插件下载地址：https://release.infinilabs.com/analysis-ik/stable/
+elasticsearch-analysis-ik-9.3.0.zip下载后解压文件夹放在plugins文件夹中
+plugins/
+└── analysis-ik/
+
+3: 启动
+elasticsearch.bat
+
+4: 运行es4个代码
