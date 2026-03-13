@@ -1,0 +1,89 @@
+[
+  {
+    "text": "我们一起去玩吧用英文怎么说",
+    "domain": "translation",
+    "intent": "TRANSLATION",
+    "slots": {
+      "content": "我们一起去玩吧",
+      "target": "英文"
+    }
+  },
+  {
+    "text": "查询明天南阳到上海的航班",
+    "domain": "flight",
+    "intent": "QUERY",
+    "slots": {
+      "startLoc_city": "南阳",
+      "endLoc_city": "上海",
+      "startDate_date": "明天"
+    }
+  },
+  {
+    "text": "北京到成都的汽车时刻表。",
+    "domain": "bus",
+    "intent": "QUERY",
+    "slots": {
+      "Src": "北京",
+      "Dest": "成都"
+    }
+  },
+  {
+    "text": "恩，红烧土豆怎么做我想学？",
+    "domain": "cookbook",
+    "intent": "QUERY",
+    "slots": {
+      "dishName": "红烧土豆"
+    }
+  },
+  {
+    "text": "电视台现在在播放什么大陆动漫",
+    "domain": "epg",
+    "intent": "QUERY",
+    "slots": {
+      "area": "大陆",
+      "category": "动漫",
+      "datetime_time": "现在"
+    }
+  },
+  {
+    "text": "给青发短信",
+    "domain": "message",
+    "intent": "SEND",
+    "slots": {
+      "name": "青"
+    }
+  },
+  {
+    "text": "来一首剑侠情缘",
+    "domain": "music",
+    "intent": "PLAY",
+    "slots": {
+      "song": "剑侠情缘"
+    }
+  },
+  {
+    "text": "帮我搜索三国杀",
+    "domain": "app",
+    "intent": "QUERY",
+    "slots": {
+      "name": "三国杀"
+    }
+  },
+  {
+    "text": "那会不会下雨",
+    "domain": "weather",
+    "intent": "QUERY",
+    "slots": {
+      "questionWord": "会不会",
+      "subfocus": "雨"
+    }
+  },
+  {
+    "text": "打开百度",
+    "domain": "website",
+    "intent": "OPEN",
+    "slots": {
+      "name": "百度"
+    }
+  }
+]
